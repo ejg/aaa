@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -name "*.psd" -exec convert -format jpg '{}[0]' '{}'.jpg \; && find . -name '*.jpg' -mindepth 2 -type f -exec mv -i '{}' /Users/ejg/Downloads/jpg \;
